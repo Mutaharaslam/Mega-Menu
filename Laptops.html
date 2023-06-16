@@ -1,0 +1,303 @@
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lo Menu</title>
+
+    <meta name="robots" content="noindex" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .font-12 {
+        font-size: 12px;
+      }
+      .font-14 {
+        font-size: 14px;
+      }
+      .font-16 {
+        font-size: 16px;
+      }
+      .font-18 {
+        font-size: 18px;
+      }
+      .font-20 {
+        font-size: 20px;
+      }
+      .font-22 {
+        font-size: 22px;
+      }
+      .font-24 {
+        font-size: 24px;
+      }
+      .font-30 {
+        font-size: 30px;
+      }
+      body {
+        background-color: #ddd;
+      }
+      .Menu-wrapper {
+        max-width: 1640px;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin: 0 auto;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+      }
+      .tab-buttons-holder {
+        background: #efefef 0% 0% no-repeat padding-box;
+        border-radius: 0px 0px 0px 20px;
+        padding: 0;
+        margin: 0;
+      }
+      .tab-buttons-holder .nav-link {
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+        padding: 20px 30px;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        border: none;
+        position: relative;
+      }
+      @media screen and (max-width: 1080px) {
+        .tab-buttons-holder .nav-link {
+          font-size: 16px;
+          padding: 15px 20px;
+        }
+      }
+      .tab-buttons-holder .nav-link a {
+        font-size: 18px;
+        vertical-align: middle;
+        position: absolute;
+        right: 40px;
+        opacity: 0;
+        transition: transform .25s ease;
+        width: 50px;
+        text-align: right;
+      }
+      .tab-buttons-holder .nav-link:hover {
+        background-color: #fff;
+      }
+      .tab-buttons-holder .nav-link:hover a {
+        opacity: 1;
+        transform: translateX(5px);
+      }
+      .tab-content {
+        background-color: #fff;
+        height: 100%;
+      }
+      .tab-menu-item-content {
+        padding: 20px;
+        background-color: #fff;
+        justify-content: space-between;
+        margin: 0;
+      }
+      .tab-menu-item-content .list-item h3 {
+        font-size: 18px;
+        line-height: 1.3;
+        color: #000;
+        border-bottom: 2px solid #0007;
+        width: 100%;
+        padding: 0 0 15px;
+        margin: 0 0 15px;
+        font-weight: 600;
+      }
+      @media screen and (max-width: 1080px) {
+        .tab-menu-item-content .list-item h3 {
+          font-size: 16px;
+        }
+      }
+      .tab-menu-item-content .list-item ul {
+        list-style: none;
+      }
+      .tab-menu-item-content .list-item ul li {
+        padding: 5px 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+      .tab-menu-item-content .list-item ul li a {
+        color: #000;
+      }
+      .tab-menu-item-content .feature-img-col {
+        padding-left: 20px;
+        border-left: 1px solid #0001;
+        display: flex;
+      }
+      @media screen and (max-width: 1080px) {
+        .tab-menu-item-content .feature-img-col {
+          display: none !important;
+        }
+      }
+
+      .tab-menu-item-content .feature-img-col .feature-content {
+        font-size: 30px;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.4;
+      }
+      @media screen and (max-width: 1440px) {
+        .tab-menu-item-content .feature-img-col .feature-content {
+          font-size: 26px;
+          line-height: 1.3;
+        }
+      }
+      @media screen and (max-width: 1140px) {
+        .tab-menu-item-content .feature-img-col .feature-content {
+          font-size: 22px;
+          line-height: 1.3;
+        }
+      }
+      .tab-menu-item-content .feature-img-col img {
+        margin-bottom: 15px;
+      }
+      .tab-menu-item-content .feature-img-col .feature-content span {
+        font-weight: 600;
+      }
+    </style>
+    <div class="Menu-wrapper">
+      <!-- wrapper -->
+      <div class="row gx-0">
+        <!-- menu Stack Tabs -->
+        <div class="col-3">
+          <div
+            class="nav nav-tabs d-flex flex flex-column align-items-start tab-buttons-holder h-100"
+            id="nav-tab"
+            role="tablist"
+          >
+            <span
+              class="nav-link active"
+              id="nav-laptop-notebooks-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-laptop-notebooks"
+              type="button"
+              role="tab"
+              aria-controls="nav-laptop-notebooks"
+              aria-selected="true"
+            >
+              Laptops & Notebooks
+              <a href="#">&#10095;</a>
+            </span>
+            <a
+              href="#"
+              class="nav-link"
+            >
+              Refurbished
+            </a>
+          </div>
+        </div>
+        <!-- Menu tabs Content -->
+        <div class="col-9">
+          <div class="tab-content" id="nav-tabContent">
+            <!--Content Laptop Notebooks -->
+            <div
+              class="tab-pane  active show"
+              id="nav-laptop-notebooks"
+              role="tabpanel"
+              aria-labelledby="nav-laptop-notebooks-tab"
+            >
+              <!-- Inner -->
+              <div class="row tab-menu-item-content flex-nowrap">
+                <div class="col-3 flex-fill list-item px-3">
+                  <h3 class="">Popular Brands</h3>
+                  <ul class="p-0 d-flex flex-column">
+                    <li><a href="#">Lenovo Laptops</a></li>
+                    <li><a href="#">Asus Laptops</a></li>
+                    <li><a href="#">Samsung Galaxy Laptops</a></li>
+                    <li><a href="#">DynaBook Laptops</a></li>
+                    <li><a href="#">MSI Laptops</a></li>
+                    <li><a href="#">Medion Laptops</a></li>
+                    <li><a href="#">HP Laptops</a></li>
+                    <li><a href="#">Dell Laptops</a></li>
+                    <li><a href="#">Apple Laptops</a></li>
+                    <li><a href="#">Microsoft Laptops</a></li>
+                    <li><a href="#">Toshiba Laptops</a></li>
+                    <li><a href="#">Acer Laptops</a></li>
+                    <li><a href="#">Fujitsu Laptops</a></li>
+                    <li><a href="#">GeoBooks</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 flex-fill list-item px-3">
+                  <h3 class="">Laptop Usage</h3>
+                  <ul class="p-0 d-flex flex-column mb-3">
+                    <li><a href="#">Gaming Laptops</a></li>
+                    <li><a href="#">Business Laptops</a></li>
+                    <li><a href="#">Student Laptops</a></li>
+                    <li><a href="#">Everyday Laptops</a></li>
+                    <li><a href="#">Creative Laptops</a></li>
+                  </ul>
+                  <h3 class="">Features</h3>
+                  <ul class="p-0 d-flex flex-column">
+                    <li><a href="#">Refurbished Laptops</a></li>
+                    <li><a href="#">Touchscreen Laptops</a></li>
+                    <li><a href="#">ChromeBooks Laptops</a></li>
+                    <li><a href="#">Convertible Laptops</a></li>
+                    <li><a href="#">Window Laptops</a></li>
+                    <li><a href="#">Intel Laptops</a></li>
+                    <li><a href="#">AMD Laptops</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 flex-fill list-item px-3">
+                  <h3 class="">Popular Search</h3>
+                  <ul class="p-0 d-flex flex-column">
+                    <li><a href="#">Core i9 Laptops</a></li>
+                    <li><a href="#">Core i7 Laptops</a></li>
+                    <li><a href="#">Core i5 Laptops</a></li>
+                    <li><a href="#">Core i3 Laptops</a></li>
+                    <li><a href="#">16gb ram Laptops</a></li>
+                    <li><a href="#">32gb ram Laptops</a></li>
+                    <li><a href="#">17 inch</a></li>
+                    <li><a href="#">15 inch</a></li>
+                    <li><a href="#">14 inch</a></li>
+                    <li><a href="#">13 inch</a></li>
+                    <li><a href="#">Under £600</a></li>
+                    <li><a href="#">Under £300</a></li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex flex-column align-items-start feature-img-col"
+                >
+                  <img
+                    class="img-fluid rounded-4"
+                    src="https://static-media.laptopoutlet.co.uk/wysiwyg/245/categories/ASUS_Brand_398x300.jpg"
+                    alt=""
+                  />
+                  <p class="feature-content mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitto
+                    start with <span>Laptops & Notebooks</span>
+                  </p>
+                  <a class="text-black font-12" href="#">Learn More ></a>
+                </div>
+              </div>
+              <!-- Inner -->
+            </div>
+            <!-- /Content Laptop Notebooks -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
